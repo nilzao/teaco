@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>TEACO-FF - Teste de Atenção Concentrada</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>TEACO-FF - Teste de Atenção Concentrada - Forma Figural</h1>
+
+  <div id="instructions">
+    <h2>Instruções</h2>
+    <p>Este é um teste de atenção concentrada com duração de <strong>4 minutos</strong>.</p>
+    <p>Você verá uma grade com <strong>500 figuras</strong>.</p>
+    <p>Seu objetivo é <strong>clicar apenas nas 180 figuras-alvo: <span style="font-size: 1.5em;">★</span></strong>, ignorando todas as demais.</p>
+    <p>Evite clicar em figuras erradas. O teste avalia tanto os <strong>acertos</strong> quanto os <strong>erros</strong>.</p>
+    <p>Quando estiver pronto(a), preencha seu nome e clique no botão abaixo para iniciar.</p>
+    <input type="text" id="volunteerName" placeholder="Digite seu nome completo" />
+    <br><br>
+    <button onclick="startTest()">Iniciar Teste</button>
+  </div>
+
+  <div id="test-area" class="hidden"></div>
+
+  <div id="results" class="hidden">
+    <p id="summary"></p>
+    <button onclick="downloadCSV()">Baixar Resultado CSV</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
